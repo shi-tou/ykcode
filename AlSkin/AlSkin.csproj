@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9D734669-6BFD-4CD0-B527-ED622CDB608D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AlSkin</RootNamespace>
+    <AssemblyName>AlSkin</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlClass\ImageDrawRect.cs" />
+    <Compile Include="AlClass\ImageObject.cs" />
+    <Compile Include="AlClass\NativeMethods.cs" />
+    <Compile Include="AlClass\Win32.cs" />
+    <Compile Include="ALControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ALControl.Designer.cs">
+      <DependentUpon>ALControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlControl\AlButton\AlButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AlForm\AlBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlForm\AlBaseForm.Designer.cs">
+      <DependentUpon>AlBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AlForm\AlBaseForm.resx">
+      <DependentUpon>AlBaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ALControl.resx">
+      <DependentUpon>ALControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlSkinImg\AlFormImg\aio_light_bkg.png" />
+    <EmbeddedResource Include="AlSkinImg\AlFormImg\aio_png_bkg.png" />
+    <EmbeddedResource Include="AlSkinImg\AlFormImg\all_inside02_bkg.png" />
+    <EmbeddedResource Include="AlSkinImg\AlFormImg\all_inside03_bkg.png" />
+    <EmbeddedResource Include="AlSkinImg\AlFormImg\all_inside_bkg.png" />
+    <EmbeddedResource Include="AlSkinImg\AlFormImg\all_light_bkg.png" />
+    <EmbeddedResource Include="AlSkinImg\AlFormImg\main_light_bkg.png" />
+    <EmbeddedResource Include="AlSkinImg\AlFormImg\main_png_bkg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AlSkinImg\AlButtonImg\Bottom2.png" />
+    <EmbeddedResource Include="AlSkinImg\AlButtonImg\Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AlSkinImg\AlFormImg\btn_close.png" />
+    <EmbeddedResource Include="AlSkinImg\AlFormImg\btn_max.png" />
+    <EmbeddedResource Include="AlSkinImg\AlFormImg\btn_mini.png" />
+    <EmbeddedResource Include="AlSkinImg\AlFormImg\btn_restore.png" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
