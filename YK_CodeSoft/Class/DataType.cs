@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -9,7 +9,7 @@ namespace YK_CodeSoft.Class
     /// </summary>
     public class DataType
     {
-        private string RetrunType;
+        private string ReturnType;
         public DataType()
         {
 
@@ -18,32 +18,32 @@ namespace YK_CodeSoft.Class
         {
             switch (Type.Trim())
             {
-                case "char": this.RetrunType = "string"; break;
-                case "varchar": this.RetrunType = "string"; break;
-                case "text": this.RetrunType = "string"; break;
-                case "datetime": this.RetrunType = "string"; break;
-                case "smdlldatetime": this.RetrunType = "string"; break;
-                case "nchar": this.RetrunType = "string"; break;
-                case "nvarchar": this.RetrunType = "string"; break;
-                case "ntext": this.RetrunType = "string"; break;
-                case "binary": this.RetrunType = "string"; break;
-                case "varbinary": this.RetrunType = "string"; break;
-                case "image": this.RetrunType = "string"; break;
-                case "bit": this.RetrunType = "int"; break;
-                case "tinyint": this.RetrunType = "int"; break;
-                case "smallint": this.RetrunType = "int"; break;
-                case "int": this.RetrunType = "int"; break;
-                case "bigint": this.RetrunType = "int"; break;
-                case "numeric": this.RetrunType = "int"; break;
-                case "decimal": this.RetrunType = "int"; break;
-                case "int identity": this.RetrunType = "int"; break;
-                case "smallmoney": this.RetrunType = "decimal"; break;
-                case "money": this.RetrunType = "decimal"; break;
-                case "float": this.RetrunType = "float"; break;
-                case "real": this.RetrunType = "float"; break;
-                default: this.RetrunType = "1"; break;
+                case "char": this.ReturnType = "string"; break;
+                case "varchar": this.ReturnType = "string"; break;
+                case "text": this.ReturnType = "string"; break;
+                case "datetime": this.ReturnType = "string"; break;
+                case "smdlldatetime": this.ReturnType = "string"; break;
+                case "nchar": this.ReturnType = "string"; break;
+                case "nvarchar": this.ReturnType = "string"; break;
+                case "ntext": this.ReturnType = "string"; break;
+                case "binary": this.ReturnType = "string"; break;
+                case "varbinary": this.ReturnType = "string"; break;
+                case "image": this.ReturnType = "string"; break;
+                case "bit": this.ReturnType = "int"; break;
+                case "tinyint": this.ReturnType = "int"; break;
+                case "smallint": this.ReturnType = "int"; break;
+                case "int": this.ReturnType = "int"; break;
+                case "bigint": this.ReturnType = "int"; break;
+                case "numeric": this.ReturnType = "int"; break;
+                case "decimal": this.ReturnType = "int"; break;
+                case "int identity": this.ReturnType = "int"; break;
+                case "smallmoney": this.ReturnType = "decimal"; break;
+                case "money": this.ReturnType = "decimal"; break;
+                case "float": this.ReturnType = "float"; break;
+                case "real": this.ReturnType = "float"; break;
+                default: this.ReturnType = "1"; break;
             }
-            return RetrunType;
+            return ReturnType;
         }
     }
     /// <summary>
@@ -51,7 +51,7 @@ namespace YK_CodeSoft.Class
     /// </summary>
     public class BuilderDALParamDataType
     {
-        private string RetrunType;
+        private string ReturnType;
         public BuilderDALParamDataType()
         {
         }
@@ -59,33 +59,33 @@ namespace YK_CodeSoft.Class
         {
             switch (Type.Trim())
             {
-                case "char": this.RetrunType = "Char"; break;
-                case "varchar": this.RetrunType = "VarChar"; break;
-                case "text": this.RetrunType = "Text"; break;
-                case "datetime": this.RetrunType = "DateTime"; break;
-                case "smdlldatetime": this.RetrunType = "SmdllDateTime"; break;
-                case "nchar": this.RetrunType = "NChar"; break;
-                case "nvarchar": this.RetrunType = "NVarChar"; break;
-                case "ntext": this.RetrunType = "NText"; break;
-                case "binary": this.RetrunType = "Binary"; break;
-                case "varbinary": this.RetrunType = "VarBinary"; break;
-                case "image": this.RetrunType = "Image"; break;
-                case "bit": this.RetrunType = "Bit"; break;
-                case "tinyint": this.RetrunType = "TinyInt"; break;
-                case "smallint": this.RetrunType = "SmallInt"; break;
-                case "int": this.RetrunType = "Int"; break;
-                case "bigint": this.RetrunType = "BigInt"; break;
-                case "numeric": this.RetrunType = "Decimal"; break;
-                case "decimal": this.RetrunType = "Decimal"; break;
-                case "int identity": this.RetrunType = "Int"; break;
-                case "smallmoney": this.RetrunType = "SmallMoney"; break;
-                case "money": this.RetrunType = "Money"; break;
-                case "float": this.RetrunType = "Float"; break;
-                case "real": this.RetrunType = "Real"; break;
-                default: this.RetrunType = "1"; break;
+                case "char": this.ReturnType = "Char"; break;
+                case "varchar": this.ReturnType = "VarChar"; break;
+                case "text": this.ReturnType = "Text"; break;
+                case "datetime": this.ReturnType = "DateTime"; break;
+                case "smdlldatetime": this.ReturnType = "SmdllDateTime"; break;
+                case "nchar": this.ReturnType = "NChar"; break;
+                case "nvarchar": this.ReturnType = "NVarChar"; break;
+                case "ntext": this.ReturnType = "NText"; break;
+                case "binary": this.ReturnType = "Binary"; break;
+                case "varbinary": this.ReturnType = "VarBinary"; break;
+                case "image": this.ReturnType = "Image"; break;
+                case "bit": this.ReturnType = "Bit"; break;
+                case "tinyint": this.ReturnType = "TinyInt"; break;
+                case "smallint": this.ReturnType = "SmallInt"; break;
+                case "int": this.ReturnType = "Int"; break;
+                case "bigint": this.ReturnType = "BigInt"; break;
+                case "numeric": this.ReturnType = "Decimal"; break;
+                case "decimal": this.ReturnType = "Decimal"; break;
+                case "int identity": this.ReturnType = "Int"; break;
+                case "smallmoney": this.ReturnType = "SmallMoney"; break;
+                case "money": this.ReturnType = "Money"; break;
+                case "float": this.ReturnType = "Float"; break;
+                case "real": this.ReturnType = "Real"; break;
+                default: this.ReturnType = "1"; break;
 
             }
-            return RetrunType;
+            return ReturnType;
         }
     }
 }
